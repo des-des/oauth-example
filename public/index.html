@@ -13,12 +13,11 @@
         var req = new XMLHttpRequest();
         req.onreadystatechange = function(){
           if(req.readyState === 4 && req.status === 200){
-            console.log(req.responseText);
+            console.log(JSON.parse(req.responseText));
           }
         }
 
         req.open("GET", "/getData");
-        // req.setRequestHeader("Authorization", token)
         req.send();
 
       })
