@@ -42,7 +42,15 @@ Github validates the credentials provided and sends back an *access token* in an
 
 ### Step 6 
 
-Using Hapi.js Inert function we reply to the client with index.htnl file and set the parsed accesstoken as a cookie by using state. 
+Using Hapi.js Inert function we reply to the client with index.htnl file and set the parsed accesstoken as a cookie by using state.
+
+### Step 7 
+
+The user clicks the get Data button on the front end which sends a request to Github for public information of the user, the access token is included in the header of the request. 
+
+### Step 8
+
+Github returns an object with the users details which can be viewed in the console. 
 
 ## Modules Used 
 
