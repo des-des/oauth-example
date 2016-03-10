@@ -40,6 +40,9 @@ This is sent to the following endpoint: https://github.com/login/oauth/access_to
 
 Github validates the credentials provided and sends back an *access token* in an JSON object. 
 
+### Step 6 
+
+Using Hapi.js Inert function we reply to the client with index.htnl file and set the parsed accesstoken as a cookie by using state. 
 
 ## Modules Used 
 
